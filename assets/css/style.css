@@ -6,12 +6,15 @@
 	bottom: 0;
 	left: 0;
 	margin: 0 auto;
-	z-index: 1000;
+	z-index: 1;
 	background-color: #dde2e78f;
 }
 .logo {
 	display: inline-block;
 	padding: 30px 0 30px 10px;
+}
+.logo img {
+	width: 100%;
 }
 .TopLine {
 	background-color: #00000091;
@@ -46,7 +49,6 @@
 	background-image: url(../images/Mail.png);
 	background-repeat: no-repeat;
 	padding-left: 33px;
-	margin-left: 55px;
 	color: #8f9395;
 	text-transform: uppercase;
 	background-position-y:center;
@@ -90,3 +92,203 @@
 .carousel-indicators .active {
   background-color: #fff !important;
 }
+/*------------------------------------------------------------------------------*/
+nav {
+	margin-top: 30px;
+	font-family: 'BPGBannerCaps';
+}
+.menu_list {
+	padding: 0;
+	margin: 0;
+}
+.menu_list li {
+	display: inline;
+	padding: 0 25px;
+  font-size: 12px;
+}
+.menu_list li:first-child {
+	padding-left: 0;
+}
+
+.menu_list li a {
+	color:#333;
+	font-size: 16px;
+}
+.menu_list  .active a {
+  color: #c52c2c;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+.menu_list li a:hover {
+	color: #c52c2c;
+	text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+
+.toggle {
+	display: none;
+}
+
+.menu_list img {
+  background-color: #ff3333;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+/*search box style*/
+.search-box {
+  position: absolute;
+  top: 32px;
+  right: 42px;
+  background-color: #2f3640;
+  height: 17px;
+  border-radius: 50px;
+  z-index: 1000;
+}
+
+.search-btn {
+  position: absolute;
+  float: right;
+  width: 17px;
+  height: 17px;
+  right: -17px;
+  bottom: -5px;
+  border-radius: 3px;
+  padding: 10px;
+  border: 2px solid #797979;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-txt {
+  border:none;
+  position: absolute;
+  right: 0;
+  background-color: #2f3640;
+  height: 30px;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #fff;
+  font-size: 12px;
+  transition: 0.4s;
+  line-height: 40px;
+  display: none;
+  width: 150px;
+  padding: 0 10px;
+  margin-right: -20px;
+  margin-top: -5px;
+}
+/*end search box style*/
+.lang_href {
+  display: inline-block;
+  float: right;
+  color: #fff;
+  font-size: 12px;
+}
+
+.lang_href:hover {
+  text-decoration: none;
+  color: #ff3333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+	.header {
+		top: 0;
+		height: 55px;
+	}
+	.logo {
+		padding:0;
+	}
+	.carousel-indicators {
+    	bottom: 0 !important;
+	}
+	nav {
+		margin-top: -30px;
+	} 
+	.menu_list {
+    	top: 50px !important;
+    }
+  
+}
+@media screen and (max-width: 991.98px) {
+  .toggle {
+  	display: block;
+  	text-align: right;
+  	color:#fff;
+  	z-index: 1000;
+  }
+  .toggle i {
+  	font-size: 30px;
+  	cursor: pointer;
+  }
+  .menu_list {
+  	display: none;
+  	position: fixed;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    background-color: rgb(8, 7, 7, 0.58);
+    color: #fff;
+    z-index: -1;
+  }
+  .active {
+  	display: block;
+  }
+  .menu_list li {
+  	display: block;
+  	text-align: center;
+  	padding: 20px 0;
+  }
+  .menu_list li a{
+    color:#fff;
+    font-size: 20px;
+  }
+  .search-box {
+  display: none;
+}
+.lang_href {
+    line-height: 59px;
+    font-size: 30px;
+  }
+  .search-btn {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    float: right;
+    width: 29px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news_block .news_text {
+    height: 74px;
+}
+.mail_block span {
+  display: block;
+}
+.contr_text {
+  padding-top: 80px;
+  }
+
+}
+@media screen and (max-width: 1199.98px) {
+	
