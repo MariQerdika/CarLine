@@ -103,7 +103,7 @@ nav {
 }
 .menu_list li {
 	display: inline;
-	padding: 0 25px;
+	padding: 0 15px;
   font-size: 12px;
 }
 .menu_list li:first-child {
