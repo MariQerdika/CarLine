@@ -1,3 +1,82 @@
+.header {
+	height: 115px;
+	position: fixed;
+	top: 50px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	z-index: 1000;
+	background-color: #dde2e78f;
+}
+.logo {
+	display: inline-block;
+	padding: 30px 0 30px 10px;
+}
+.TopLine {
+	background-color: #00000091;
+	height: 35px;
+	border-bottom-left-radius: 10px;
+}
+.TopLine i{
+	color: #fff;
+	padding: 0 9px;
+	line-height: 35px;
+}
+.fa-facebook-f:hover {
+	color: #29487d;
+}
+.fa-twitter:hover {
+	color: #1da1f2;
+}
+.fa-google-plus-g:hover {
+	color: #dd5144;
+}
+.fa-youtube:hover {
+	color: #ff0000;
+}
+.CallNumber{
+	background-image: url(../images/Call.png);
+	background-repeat: no-repeat;
+	padding-left: 33px;
+	color: #8f9395;
+	background-position-y:center;
+}
+.Mail {
+	background-image: url(../images/Mail.png);
+	background-repeat: no-repeat;
+	padding-left: 33px;
+	margin-left: 55px;
+	color: #8f9395;
+	text-transform: uppercase;
+	background-position-y:center;
+}
+.TopLine .CallNumber {
+	line-height: 35px;
+}
+.TopLine .CallNumber:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.TopLine .Mail {
+	line-height: 35px;
+}
+.TopLine .Mail:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.languages a {
+	padding: 0 5px;
+	line-height: 30px;
+}
+.languages img:hover {
+	transform: scale(1.1);
+}
+
+
+
+
+
 .carousel-indicators {
   bottom: 120px !important;
 }
