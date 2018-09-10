@@ -1,6 +1,15 @@
+nav,h3,h4,h5,h6,.more, .Copyright {
+  font-family: 'BPGBannerCaps';
+}
+.about_text {
+font-family: 'BPGGlaho';
+}
+html {
+  font-size: 62.5%;
+}
 .header {
 	height: 115px;
-	position: fixed;
+	position: absolute;
 	top: 50px;
 	right: 0;
 	bottom: 0;
@@ -25,6 +34,7 @@
 	color: #fff;
 	padding: 0 9px;
 	line-height: 35px;
+  font-size: 12px;
 }
 .fa-facebook-f:hover {
 	color: #29487d;
@@ -41,17 +51,19 @@
 .CallNumber{
 	background-image: url(../images/Call.png);
 	background-repeat: no-repeat;
-	padding-left: 33px;
+	padding: 3px 33px;
 	color: #8f9395;
 	background-position-y:center;
+  font-size: 12px;
 }
 .Mail {
 	background-image: url(../images/Mail.png);
 	background-repeat: no-repeat;
-	padding-left: 33px;
+	padding: 3px 33px;
 	color: #8f9395;
 	text-transform: uppercase;
 	background-position-y:center;
+  font-size: 12px;
 }
 .TopLine .CallNumber {
 	line-height: 35px;
@@ -95,7 +107,6 @@
 /*------------------------------------------------------------------------------*/
 nav {
 	margin-top: 30px;
-	font-family: 'BPGBannerCaps';
 }
 .menu_list {
 	padding: 0;
@@ -192,16 +203,177 @@ nav {
   text-decoration: none;
   color: #ff3333;
 }
-
-
-
-
-
-
-
-
-
-
+.news_background {
+  background-color: #e6e6e6;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+.news {
+  margin-top: -90px;
+  position: relative;
+}
+.news img {
+  width: 100%;
+}
+.news h6 {
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+  font-size: 1.8rem;
+}
+.news a {
+  color: #fff;
+}
+.news a:hover {
+  color: #fd3b18;
+}
+.news a:hover img {
+  filter: brightness(0.5);
+}
+h3 a {
+  font-size: 3rem;
+  color: #262626;
+}
+h3 a:hover {
+  text-decoration: none;
+  color: #e23f23;
+}
+.main_news {
+  padding-bottom: 45px;
+}
+.main_news h6 a {
+  font-size: 1.8rem;
+  display: inline-block;
+  color: #262626;
+  padding:15px 0;
+}
+.main_news h6 a:hover {
+  color: #e23f23;
+  text-decoration: none;
+}
+.main_news img {
+  width: 100%;
+}
+.NewsDate {
+  font-size: 1.4rem;
+  display: block;
+  color: #333;
+  border-bottom: 1px solid #808080;
+}
+.NewsText {
+  font-size: 1.4rem;
+  padding: 12px 0;
+}
+.more a{
+  font-size: 1.4rem;
+  color: #262626;
+}
+.more a:hover{
+  text-decoration: none;
+  color: #e23f23;
+  background-image: url(../images/more_icon.png);
+}
+.more a {
+  background-image: url(../images/more_icon_black.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 45px;
+}
+.about {
+  padding: 0;
+  position: relative;
+}
+.about img {
+  width: 100%;
+}
+.about_us h4 {
+  padding-bottom: 30px;
+  font-size: 2.2rem;
+}
+.about_col {
+  background-color: #e6e6e6;
+}
+.about_us {
+  padding: 60px 40px 40px;
+  background-color: #393939;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about_text {
+  padding-bottom: 60px;
+  font-size: 1.6rem;
+}
+.about_us .more a {
+  color: #fff;
+}
+.about_us .more a {
+  background-image: url(../images/more_icon_white.png);
+}
+.about_us .more a:hover {
+  color: #e23f23;
+  background-image: url(../images/more_icon.png);
+}
+.company {
+  padding: 50px 0;
+}
+.company img {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+}
+.company img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.arrows {
+  padding-bottom: 20px;
+  text-align: right;
+}
+.arrows i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.arrows i:hover {
+  color: red;
+}
+.arrows .fa-chevron-left {
+  padding-right: 13px;
+}
+.arrows .fa-chevron-right {
+  padding-left: 13px;
+}
+#map {
+  width: 100%;
+  height: 380px;
+  position: relative;
+  bottom: 0;
+}
+h6 {
+  font-size: 1.6rem;
+  color: #3f4d58;
+}
+.footer a{
+  font-size: 1.4rem;
+  color: #3d3d3d;
+}
+.top {
+  text-align: right;
+}
+.icons {
+  text-align: center;
+}
+.footer {
+  padding: 20px 10px;
+}
+.footer span {
+  display: block;
+  font-size: 1.4rem;
+}
+.goodweb {
+  color: red;
+}
 
 
 
@@ -221,7 +393,15 @@ nav {
 	} 
 	.menu_list {
     	top: 50px !important;
-    }
+  }
+  .news {
+    margin-top: 0;
+  }
+  .news_block {
+    margin: 10px 0;
+  }
+  
+
   
 }
 @media screen and (max-width: 991.98px) {
@@ -284,11 +464,20 @@ nav {
 }
 .mail_block span {
   display: block;
-}
+  }
 .contr_text {
   padding-top: 80px;
   }
-
 }
 @media screen and (max-width: 1199.98px) {
+  html {
+    font-size: 50%;
+  }
+  .about_us {
+    padding: 10px;
+    }
+  .about_text {
+    padding-bottom: 10px;
+  }
+}
 	
