@@ -1,7 +1,7 @@
-nav,h3,h4,h5,h6,.more, .Copyright {
+nav,h1,h3,h4,h5,h6,.more, .Copyright {
   font-family: 'BPGBannerCaps';
 }
-.about_text {
+.about_text, .slider_text {
 font-family: 'BPGGlaho';
 }
 html {
@@ -86,11 +86,6 @@ html {
 .languages img:hover {
 	transform: scale(1.1);
 }
-
-
-
-
-
 .carousel-indicators {
   bottom: 120px !important;
 }
@@ -105,6 +100,39 @@ html {
   background-color: #fff !important;
 }
 /*------------------------------------------------------------------------------*/
+h1 {
+  float: left;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-left: 10px;
+  width: 100%;
+}
+.fa-chevron-left {
+  margin-left: 3px;
+}
+.text_slider {
+  position: absolute;
+  top: 30%;
+  left:20%;
+  z-index: 1000;
+}
+.text_slider i {
+  padding: 19px;
+  background-color: #ff000078;
+  cursor: pointer;
+}
+.text_slider i:hover {
+  background-color: red;
+}
+.text_slider_bc {
+  background-color: #dde2e7db;
+}
+.slider_text {
+  background-color: #dde2e7db;
+  margin-top: 3px;
+  padding: 27px;
+  font-size: 16px;
+}
 nav {
 	margin-top: 30px;
 }
@@ -192,6 +220,28 @@ nav {
   margin-top: -5px;
 }
 /*end search box style*/
+/*------------------start slider style------------*/
+.owl-nav {
+    background-color: white;
+    position: absolute;
+    top: -45px;
+    right: 0;
+}
+.owl-nav span {
+  color: #333;
+  font-size: 30px;
+  padding: 0 10px;
+}
+:focus {
+  outline: none !important;
+}
+.owl-nav span:hover {
+  color: #ff0000;
+}
+.news_inner h6 {
+  line-height: 15px !important;
+}
+/*-----------------end slider style--------------*/
 .lang_href {
   display: inline-block;
   float: right;
@@ -224,7 +274,7 @@ nav {
 .news a {
   color: #fff;
 }
-.news a:hover {
+.news a:hover h6 {
   color: #fd3b18;
 }
 .news a:hover img {
@@ -327,23 +377,6 @@ h3 a:hover {
   opacity: 0.7;
   cursor: pointer;
 }
-.arrows {
-  padding-bottom: 20px;
-  text-align: right;
-}
-.arrows i {
-  font-size: 20px;
-  cursor: pointer;
-}
-.arrows i:hover {
-  color: red;
-}
-.arrows .fa-chevron-left {
-  padding-right: 13px;
-}
-.arrows .fa-chevron-right {
-  padding-left: 13px;
-}
 #map {
   width: 100%;
   height: 380px;
@@ -400,7 +433,9 @@ h6 {
   .news_block {
     margin: 10px 0;
   }
-  
+  .owl-carousel {
+    margin-top: 65px;
+  }
 
   
 }
@@ -480,4 +515,12 @@ h6 {
     padding-bottom: 10px;
   }
 }
+@media screen and (max-width: 1400px) {
+  .text_slider {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+
 	

@@ -10,6 +10,8 @@
   <link rel="stylesheet"  href="assets/sass/popup.scss">
   <link rel="stylesheet"  href="assets/css/fonts.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 </head>
 <header class="container header">
   <div class="row">
@@ -61,6 +63,23 @@
     </div>
   </div>
 </header>
+<div class="container text_slider d-none d-xl-block">
+  <div class="row">
+    <div class="col-4 text_slider_bc">
+      <h1>კომპანიის საყვარელი მწერალი</h1>
+    </div>
+    <div class="slider_icon">
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    <div class="w-100"></div>
+    <div class="col-5 slider_text">
+      <p>თბილისის წიგნის საერთაშორისო ფესტივალის ფარგლებში, ჩვენმა კომპანიამ არ უღალატა ტრადიციას და საყვარელი მოთხრობის ავტორი წელს უკვე მეხუთედ დააჯილდოვა.</p>
+    </div>
+
+    
+  </div>
+</div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -140,25 +159,15 @@
   </div>
 </section>
 <section id="company" class="container company">
-  <div class="row arrows">
-    <div class="col-12">
-      <i class="fas fa-chevron-left"></i>
-      <i class="fas fa-chevron-right"></i>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-3">
-      <img src="assets/images/CompanyImg1.png">
-    </div>
-    <div class="col-3">
-      <img src="assets/images/CompanyImg2.png">
-    </div>
-    <div class="col-3">
-      <img src="assets/images/CompanyImg3.png">
-    </div>
-    <div class="col-3">
-      <img src="assets/images/CompanyImg4.png">
-    </div>
+    <div class="owl-carousel" id="bottom_slider">
+        <div><a href="#"><img src="assets/images/CompanyImg1.png"/></a></div>
+        <div><a href="#"><img src="assets/images/CompanyImg2.png"/></a></div>
+        <div><a href="#"><img src="assets/images/CompanyImg3.png"/></a></div>
+        <div><a href="#"><img src="assets/images/CompanyImg4.png"/></a></div>
+        <div><a href="#"><img src="assets/images/CompanyImg1.png"/></a></div>
+        <div><a href="#"><img src="assets/images/CompanyImg2.png"/></a></div>
+        <div><a href="#"><img src="assets/images/CompanyImg3.png"/></a></div>
+        <div><a href="#"><img src="assets/images/CompanyImg4.png"/></a></div>   
   </div>
 </section>
 <div id="map" class="container-fluid">
@@ -194,6 +203,8 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript">
 // burger click start
  $(document).ready(function(){
@@ -212,7 +223,23 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     });
 });
 // search style end
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
 
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true, 
+    nav: true,
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
 </script>
 </body>
 </html>
