@@ -330,7 +330,6 @@ h3 a:hover {
   padding-right: 45px;
 }
 .about {
-  padding: 0;
   position: relative;
 }
 .about img {
@@ -342,6 +341,7 @@ h3 a:hover {
 }
 .about_col {
   background-color: #e6e6e6;
+  padding: 0;
 }
 .about_us {
   padding: 60px 40px 40px;
